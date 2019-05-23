@@ -1,10 +1,12 @@
 # Management Portal for AIL multitenant instance
 
-#TODO
+This addon provides a web portal to manage terms in an AIL instance used by multiple companies.
+
+About AIL framework: [https://github.com/CIRCL/AIL-framework](https://github.com/CIRCL/AIL-framework)
 
 ## Installation
 
-Type these command lines for a fully automated installation:
+Type these command lines for a fully automated installation (asks for the AIL framework instance's installation path):
 
 ```bash
 git clone https://github.com/mmc-mistic19/managementPortal.git
@@ -14,11 +16,13 @@ chmod +x previousConfigurations.sh
 ```
 
 ## Usage
+Activate the virtual enviroment and run the flask server. By default server runs in port 4000.
 
 ```bash
 source managementPortal/bin/activate
 python3 managementPortal.py
 ```
+Default user and password: admin/password
 
 ## License
-#TODO
+[MIT](https://choosealicense.com/licenses/mit/)
