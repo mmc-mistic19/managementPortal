@@ -2,6 +2,8 @@
 
 This addon provides a web portal to manage terms in an AIL instance used by multiple companies.
 
+![managementPortal](./managementPortal.PNG?raw=true "Management portal")
+
 About AIL framework: [https://github.com/CIRCL/AIL-framework](https://github.com/CIRCL/AIL-framework)
 
 ## Installation
