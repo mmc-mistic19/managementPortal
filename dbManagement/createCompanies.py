@@ -1,4 +1,8 @@
 import sqlite3
+import os
+
+#Database permissions to write
+os.chmod('../identityManagement.db', 0o600)
 
 #Request company name:
 companyName = input ("Introduce company name: ")
@@ -13,3 +17,6 @@ c = conn.cursor()
 c.execute("INSERT INTO companies(companyName,termsLimit) VALUES ('"+companyName+"','"+termsLimit+"')")
 conn.commit()
 c.close()
+
+#restablish database permissions
+os.chmod('../identityManagement.db', 0o400)

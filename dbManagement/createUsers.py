@@ -2,6 +2,10 @@ import sqlite3
 import hashlib
 import secrets
 import getpass
+import os
+
+#Database permissions to write
+os.chmod('../identityManagement.db', 0o600)
 
 #Generate random salt
 salt = secrets.token_hex(8)
@@ -21,3 +25,6 @@ c = conn.cursor()
 c.execute("INSERT INTO users(username,password,salt) VALUES ('"+user+"','"+hashedPassword+"','"+salt+"')")
 conn.commit()
 c.close()
+
+#restablish database permissions
+os.chmod('../identityManagement.db', 0o400)
