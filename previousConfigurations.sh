@@ -20,4 +20,4 @@ python3 identityManagement.py
 python3 initializeDatabase.py
 
 #Change database permisions
-chmod 400 initializeDatabase.py
+chmod 400 identityManagement.db
