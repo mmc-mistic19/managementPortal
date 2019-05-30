@@ -26,5 +26,8 @@ python3 managementPortal.py
 ```
 Default user and password: admin/password
 
+## Manage users and companies
+Automated scripts to configure users, companies and relationships are provided in the [dbManagement](dbManagement) folder.
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
